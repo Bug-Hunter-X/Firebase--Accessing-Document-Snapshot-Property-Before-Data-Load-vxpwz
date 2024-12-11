@@ -1,0 +1,2 @@
+# Firebase: Accessing Document Snapshot Property Before Data Load
+This repository demonstrates a common error in Firebase when accessing properties of a document snapshot before the data has fully loaded.  The `bug.js` file shows the problematic code, while `bugSolution.js` provides the corrected version. This bug often occurs due to asynchronous operation that are not correctly handled in your code and the data not finishing its download from the database.  Ensure your code always checks for the existence of data before accessing its properties to avoid unexpected errors.
